@@ -9,10 +9,10 @@ import (
 	"time"
 )
 
-// LastUpdated is the mod time of the embedded geoip files.
+// LastUpdated is the mod time of the embedded GeoIP files.
 func LastUpdated() time.Time { return time.Unix(1537539535, 0) }
 
-// GeoIPBytes returns the full byte slice of the geo IP file.
+// GeoIPBytes returns the full byte slice of the GeoIP file.
 func GeoIPBytes(ipv6 bool) ([]byte, error) {
 	if ipv6 {
 		return geoip6Bytes()
